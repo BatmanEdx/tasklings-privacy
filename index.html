@@ -3,69 +3,53 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tasklings Privacy Policy</title>
+<title>Tasklings: To-Do Buddy</title>
+<meta name="description" content="A cheerful to-do list with a buddy who keeps you on track. One thing at a time.">
 <style>
-  :root { --ink:#1f1d36; --muted:#5b5872; --line:#e6e3f0; --bg:#fbfaff; --accent:#7b2cbf; }
-  @media (prefers-color-scheme: dark) { :root { --ink:#eeeaf8; --muted:#b4afc8; --line:#34304a; --bg:#16141f; --accent:#c49bff; } }
+  :root { --ink:#1f1d36; --muted:#5b5872; --card:#ffffff; --line:#e6e3f0; --bg:#fbfaff; --accent:#7b2cbf; --accent2:#ff6b9d; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#eeeaf8; --muted:#b4afc8; --card:#201d2c; --line:#34304a; --bg:#16141f; --accent:#c49bff; --accent2:#ff8fb6; } }
+  * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
-  h1 { font-size:1.8rem; line-height:1.2; margin:0 0 4px; }
-  h2 { font-size:1.15rem; margin:32px 0 8px; }
-  .date { color:var(--muted); margin:0 0 24px; }
-  .short { border-left:4px solid var(--accent); padding:8px 14px; background:color-mix(in srgb,var(--accent) 8%,transparent); border-radius:6px; }
+  main { max-width:880px; margin:0 auto; padding:48px 16px 64px; }
+  .hero { text-align:center; padding:24px 0 8px; }
+  .badge { display:inline-block; font-size:.8rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--accent); border:1px solid var(--line); border-radius:999px; padding:4px 12px; margin-bottom:16px; }
+  h1 { font-size:clamp(2rem,6vw,3.2rem); line-height:1.1; margin:0 0 12px; }
+  h1 span { background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .lead { font-size:1.15rem; color:var(--muted); max-width:560px; margin:0 auto; }
+  .soon { margin-top:24px; display:inline-block; padding:12px 22px; border-radius:14px; background:var(--accent); color:#fff; font-weight:700; }
+  @media (prefers-color-scheme: dark) { .soon { color:#16141f; } }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:48px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; }
+  .card h2 { font-size:1.05rem; margin:0 0 6px; }
+  .card p { margin:0; color:var(--muted); font-size:.95rem; }
+  .note { text-align:center; color:var(--muted); margin-top:40px; }
+  footer { border-top:1px solid var(--line); margin-top:48px; padding-top:20px; display:flex; flex-wrap:wrap; gap:16px; justify-content:center; font-size:.95rem; }
   a { color:var(--accent); }
-  table { width:100%; border-collapse:collapse; font-size:.95rem; }
-  th, td { text-align:left; vertical-align:top; padding:8px 6px; border-bottom:1px solid var(--line); }
-  th { width:34%; }
 </style>
 </head>
 <body>
 <main>
-<h1>Tasklings: To-Do Buddy — Privacy Policy</h1>
-<p class="date">Last updated: 19 November 2026</p>
+  <section class="hero">
+    <div class="badge">Android · coming soon</div>
+    <h1>Your to-do list, with a <span>buddy</span>.</h1>
+    <p class="lead">Tasklings keeps you on track one thing at a time, with a cheerful character who cheers you on, reminds you, and celebrates every tick.</p>
+    <div class="soon">Coming soon to Google Play</div>
+  </section>
 
-<p class="short">Tasklings is a to-do list with a friendly on-screen buddy. Short version: <strong>your tasks stay on your phone. We don't collect, sell or share your personal data.</strong></p>
+  <section class="grid">
+    <div class="card"><h2>✏️ Just type it</h2><p>“Call mom in 20 min”, “dentist tomorrow 3pm”. Tasklings understands and sets the reminder.</p></div>
+    <div class="card"><h2>🎯 One NOW task</h2><p>Star what matters, or let your buddy pick for you.</p></div>
+    <div class="card"><h2>⏱ Focus timer</h2><p>Focus sessions with built-in breaks, or a quick two-minute start.</p></div>
+    <div class="card"><h2>⭐️ XP and streaks</h2><p>Every tick earns XP and confetti. Level up as you go.</p></div>
+    <div class="card"><h2>🦸 Buddy on screen</h2><p>Your character can float over other apps with your current task. Turn it off any time.</p></div>
+    <div class="card"><h2>🤫 Calm modes</h2><p>Classroom mode, quiet hours and gentle nudge styles.</p></div>
+  </section>
 
-<h2>What the app stores, and where</h2>
-<p>Everything below is stored <strong>only on your device</strong>, inside the app's private storage:</p>
-<ul>
-  <li><strong>Your tasks</strong>, reminder times, and finished-task history for today</li>
-  <li><strong>Your progress</strong>: XP, level and streak</li>
-  <li><strong>Your settings</strong>: chosen character, theme, nudge and focus-timer preferences, buddy position</li>
-  <li><strong>Photo characters</strong> (optional): if you make a character from a photo, the app copies a small cropped version of the picture you choose into its private storage. You pick the photo with Android's photo picker, so the app only sees the one picture you select. It is never uploaded.</li>
-</ul>
-<p>We (the developer) cannot see any of this. There is no account, no sign-in, no analytics, no advertising, and no tracking.</p>
+  <p class="note">Free with unlimited tasks and reminders. One optional purchase unlocks the whole cast, games and every theme.<br>Your tasks stay on your phone. No ads, no account, no tracking.</p>
 
-<h2>Backups</h2>
-<p>If you have Android backup turned on, Android may include the app's data in <strong>your own</strong> device backup (for example, your Google account backup), so your list comes back when you restore or move to a new phone. That backup is managed by Android and Google under your account, not by us. You can turn it off in your phone's settings.</p>
-
-<h2>Purchases</h2>
-<p>The optional one-time “Unlock everything” purchase is handled entirely by <strong>Google Play</strong>. Google processes the payment; we never see your card or payment details. The app only asks Google Play whether the unlock has been bought, so it can switch the extra features on (including after you reinstall). Google's handling of your payment information is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the Google Play Terms of Service.</p>
-
-<h2>Permissions the app asks for</h2>
-<table>
-  <tr><th>Notifications</th><td>To ring your reminders and tell you when a focus session or break ends.</td></tr>
-  <tr><th>Alarms &amp; reminders (exact alarms)</th><td>So reminders ring at the exact minute you asked for. Optional: without it, reminders may arrive a few minutes late.</td></tr>
-  <tr><th>Display over other apps</th><td>Only if you turn on the on-screen buddy, so it can float over other apps. You can turn the buddy off at any time.</td></tr>
-  <tr><th>Run at startup</th><td>To set your reminders again after your phone restarts.</td></tr>
-  <tr><th>Google Play billing</th><td>For the optional one-time unlock.</td></tr>
-</table>
-<p>The app has no internet features of its own today. It does not access your contacts, location, microphone, camera, or files beyond the single photo you choose for a photo character.</p>
-
-<h2>Future sync</h2>
-<p>A future version may add optional syncing of your list between your devices. If it does, it will be <strong>off unless you turn it on</strong>, and this policy will be updated before that version is released to explain exactly what is sent, where it is stored, and how to delete it.</p>
-
-<h2>Children</h2>
-<p>Tasklings is designed for a general audience aged 13 and over. It contains no ads and collects no personal information from anyone, including children.</p>
-
-<h2>Deleting your data</h2>
-<p>Uninstalling the app deletes everything it stored on your phone. You can also clear it any time in Android Settings → Apps → Tasklings → Storage → Clear storage.</p>
-
-<h2>Changes</h2>
-<p>If this policy changes, the new version will be posted at this address with a new “Last updated” date.</p>
-
-<h2>Contact</h2>
-<p>Questions? Contact the developer through the email address on the app's Google Play listing.</p>
+  <footer>
+    <a href="/privacy/">Privacy policy</a>
+  </footer>
 </main>
 </body>
 </html>

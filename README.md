@@ -1,3 +1,3 @@
-# Tasklings privacy policy
+# tasklings.download
 
-Privacy policy for the Tasklings: To-Do Buddy Android app, published at https://batmanedx.github.io/tasklings-privacy/
+Website for the Tasklings: To-Do Buddy app, served at https://tasklings.download (privacy policy: https://tasklings.download/privacy/).
