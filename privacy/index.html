@@ -22,7 +22,7 @@
 <body>
 <main>
 <h1>Tasklings: To-Do Buddy — Privacy Policy</h1>
-<p class="date">Last updated: 20 November 2026</p>
+<p class="date">Last updated: 21 November 2026</p>
 
 <p class="short">Tasklings is a to-do list with a friendly on-screen buddy. Short version: <strong>your tasks stay on your device unless you turn on Sync. If you do, they're encrypted on your device before they're sent, so we can't read them. We don't collect, sell or share your personal data.</strong></p>
 
@@ -45,6 +45,15 @@
   <li><strong>What the server sees:</strong> like any website, the network connection reveals your IP address and the time of each sync. We don't use these to identify you; Cloudflare may keep them in short-lived operational logs, covered by <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a>.</li>
   <li><strong>How long it's kept, and deleting it:</strong> until you delete it. Choose Settings → Sync → Turn off → “Erase for all devices” and the encrypted copy is deleted from the server straight away. Turning sync off on just one device leaves the copy for your other devices.</li>
   <li><strong>Keep your code safe:</strong> anyone with your sync code can join your sync, just like a password. If you lose it, we can't recover it.</li>
+</ul>
+
+<h2>AI helper (optional, off unless you turn it on)</h2>
+<p>The AI helper can split a task into small steps (“✨ Break it down”) or turn a brain dump into a list. It's off until you turn it on in Settings, and it only acts when you tap one of those buttons.</p>
+<ul>
+  <li><strong>What is sent:</strong> only the text of that one task, or the text you typed for the brain dump. Nothing else (no other tasks, settings or anything about you).</li>
+  <li><strong>Where it goes:</strong> through our server at sync.tasklings.download to <strong>Google Gemini</strong>, which writes the steps or tasks and sends them back. This text is <em>not</em> end-to-end encrypted, because the AI has to read it; it is encrypted in transit.</li>
+  <li><strong>Not stored, not used for training:</strong> our server doesn't store or log the text. We use Google's paid Gemini API, under which Google doesn't use it to train its models (see <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>).</li>
+  <li><strong>Daily limit:</strong> to keep costs in check, the app sends a random ID (not linked to you or your tasks) so the server can count uses per device per day.</li>
 </ul>
 
 <h2>Backups</h2>
